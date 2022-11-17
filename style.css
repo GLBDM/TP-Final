@@ -49,10 +49,115 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 10vh;
+}
+.container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.container .title img {
+  width: 30%;
+}
+.container .title h1 {
+  font-weight: 900;
+  font-size: 1.375rem;
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.container .header .icon .fa-bars {
+  font-size: 2rem;
+  color: #4BA87D;
+}
+.container .header #myLinks {
+  display: none;
+}
+
 h1, p, a, li {
   font-family: "Raleway", sans-serif;
 }
 
 h2, h3 {
   font-family: "Playfair Display", serif;
+}
+
+main .emailCampaigns {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 10vh;
+}
+main .emailCampaigns .background {
+  background-image: url("assets/img/img2.png");
+  background-size: cover;
+  background-position: center;
+  height: 24vh;
+}
+main .emailCampaigns .background h2 {
+  position: relative;
+  bottom: 22px;
+  text-transform: capitalize;
+  font-size: 2.55rem;
+  width: 92%;
+}
+main .emailCampaigns .background h2 span {
+  padding-right: 1vw;
+}
+main .emailCampaigns .background p {
+  font-size: 1.08rem;
+}
+main .emailCampaigns a {
+  text-align: center;
+  width: 45%;
+  padding: 1.5vh 0;
+  display: block;
+  border: 3px solid #4BA87D;
+  background-color: white;
+  color: #4BA87D;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.65px;
+}
+main .emailCampaigns a:nth-child(2) {
+  background-color: #4BA87D;
+  color: white;
+}
+main .moreCustomers {
+  width: 95%;
+  margin: auto;
+  background-image: url("assets/img/img3.png");
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .moreCustomers h3 {
+  color: white;
+  font-size: 1.65rem;
+  text-transform: capitalize;
+  padding-bottom: 5vh;
+}
+main .moreCustomers a {
+  color: #4BA87D;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 2vh 3vh;
 }/*# sourceMappingURL=style.css.map */

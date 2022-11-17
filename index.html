@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -16,19 +17,39 @@
                 <img src="assets/img/img1.png" alt="NinjaMail Logo">
                 <h1>NinjaMail</h1>
             </div>
-            <div class="header">
-                <ul>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>Services</li>
-                    <li>Partners</li>
-                    <li>Sign up free</li>
+            <nav class="header">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <ul id="myLinks">
+                    <a href="#"><li>Features</li></a>
+                    <a href="#"><li>Pricing</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Partners</li></a>
+                    <a href="#"><li>Sign up free</li></a>
                 </ul>
             </div>
         </div>
     </header>
     <!-- FIN DU HEADER -->
-    <main></main>
+    <main>
+
+        <section class="emailCampaigns">
+            <div class="background">
+                <h2>Create stunnning <span>email</span> campaigns</h2>
+                <p>Create and launch email campaigns that captivate your customers in just a few clicks.</p>
+            </div>
+            <a href="">Try now</a>
+            <a href="">Get a demo</a>
+        </section>
+
+        <section class="moreCustomers">
+            <h3>Reach more customers</h2>
+            <a href="#">Learn how</a>
+        </section>
+
+
+    </main>
     <footer></footer>
     <script src="script.js"></script>
 </body>
