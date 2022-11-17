@@ -6,3 +6,7 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+  function displayReceived() {
+    document.getElementById("received").innerHTML = "Thanks! Email received";
+  }

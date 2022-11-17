@@ -86,12 +86,17 @@ table {
   display: none;
 }
 
-h1, p, a, li {
+h1, p, a, li, h4 {
   font-family: "Raleway", sans-serif;
 }
 
 h2, h3 {
   font-family: "Playfair Display", serif;
+}
+
+.width {
+  width: 75%;
+  margin: auto;
 }
 
 main .emailCampaigns {
@@ -160,4 +165,141 @@ main .moreCustomers a {
   text-transform: uppercase;
   background-color: white;
   padding: 2vh 3vh;
+}
+main .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+}
+main .cards .card {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 3vh;
+  box-shadow: 0px 3px 8px 3px rgba(153, 153, 153, 0.18);
+}
+main .cards .card img {
+  max-width: 100%;
+}
+main .cards .card .content {
+  padding: 3vh;
+}
+main .cards .card .content p {
+  padding-bottom: 2vh;
+  font-size: 0.95rem;
+}
+main .cards .card .content a {
+  color: #4BA87D;
+  text-decoration: none;
+  font-weight: 900;
+}
+main .cards .card .content a .fa-chevron-right {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+main .member .content h3 {
+  font-size: 2.2rem;
+  margin-bottom: 3.5vh;
+}
+main .member .content p {
+  width: 90%;
+  margin-bottom: 10vh;
+}
+main .member .imgCards1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5074404762) 0%, rgba(0, 0, 0, 0.2525385154) 25%, rgba(0, 0, 0, 0.0508578431) 50%), url("assets/img/img6.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3vh;
+}
+main .member .imgCards1 div h4 {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 1vh;
+}
+main .member .imgCards1 div p {
+  color: white;
+  font-weight: 600;
+}
+main .member .imgCards2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5074404762) 0%, rgba(0, 0, 0, 0.2525385154) 25%, rgba(0, 0, 0, 0.0508578431) 50%), url("assets/img/img7.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3vh;
+}
+main .member .imgCards2 div h4 {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 1vh;
+}
+main .member .imgCards2 div p {
+  color: white;
+  font-weight: 600;
+}
+main .member .imgCards3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5074404762) 0%, rgba(0, 0, 0, 0.2525385154) 25%, rgba(0, 0, 0, 0.0508578431) 50%), url("assets/img/img8.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3vh;
+}
+main .member .imgCards3 div h4 {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 1vh;
+}
+main .member .imgCards3 div p {
+  color: white;
+  font-weight: 600;
+}
+main .email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+main .email h3 {
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+main .email input {
+  border: 2px solid #DEDEDE;
+  border-radius: 5px;
+  padding: 3vw;
+  width: 80%;
+  margin: auto;
+  font-size: 1.1rem;
+}
+main .email a {
+  text-align: center;
+  width: 45%;
+  padding: 1.5vh 5vw;
+  display: block;
+  border: 3px solid #4BA87D;
+  background-color: #4BA87D;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.65px;
+}
+main .email #received {
+  color: #4BA87D;
+  margin: 1.5vh 0;
 }/*# sourceMappingURL=style.css.map */
