@@ -86,6 +86,55 @@ table {
   display: none;
 }
 
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+.containerFooter .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5vh 0 8vh 0;
+}
+.containerFooter .title h1 {
+  font-weight: 900;
+  font-size: 1.375rem;
+}
+.containerFooter .title img {
+  width: 25%;
+}
+.containerFooter .content .col ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+.containerFooter .content .col ul li {
+  margin-bottom: 1vh;
+  font-weight: 700;
+}
+.containerFooter .footer {
+  border-top: grey 1px solid;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.containerFooter .footer p {
+  margin-bottom: 2vh;
+}
+.containerFooter .footer .containerFooter {
+  display: flex;
+  flex-direction: column;
+}
+
 h1, p, a, li, h4 {
   font-family: "Raleway", sans-serif;
 }
@@ -272,6 +321,7 @@ main .email {
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 main .email h3 {
   font-size: 2.1rem;
@@ -302,4 +352,70 @@ main .email a {
 main .email #received {
   color: #4BA87D;
   margin: 1.5vh 0;
+}
+main .brands {
+  margin-bottom: 8vh;
+}
+main .brands h3 {
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+main .brands .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .brands .img .row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 68%;
+  margin-bottom: 5vh;
+}
+main .brands .img .row1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .brands .img .row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin-bottom: 5vh;
+}
+main .brands .img .row2 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .plan {
+  background-color: #4BA87D;
+}
+main .plan .content {
+  width: 80%;
+  margin: auto;
+  padding: 7vh 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .plan .content h2 {
+  color: white;
+  font-size: 2.55rem;
+  margin-bottom: 7vh;
+}
+main .plan .content a {
+  text-align: center;
+  width: 45%;
+  padding: 2vh 2vw;
+  display: block;
+  background-color: white;
+  color: #4BA87D;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.65px;
 }/*# sourceMappingURL=style.css.map */

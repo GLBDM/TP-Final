@@ -1,4 +1,4 @@
-@import 'reset', 'header', 'color';
+@import 'reset', 'header', 'color', 'footer';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;700;800;900&display=swap');
 
 /////// GENERAL
@@ -216,6 +216,7 @@ main{
         align-items: center;
         justify-content: center;
         margin-top: 10vh;
+        margin-bottom: 10vh;
         h3{
             font-size: 2.1rem;
             text-align: center;
@@ -246,6 +247,72 @@ main{
         #received{
             color: $green;
             margin: 1.5vh 0;
+        }
+    }
+
+    .brands{
+        margin-bottom: 8vh;
+        h3{
+            font-size: 2.1rem;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .row1{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 68%;
+                margin-bottom: 5vh;
+                img{
+                    object-fit: contain;
+                }
+            }
+            .row2{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 85%;
+                margin-bottom: 5vh;
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    .plan{
+        background-color: $green;
+        .content{
+            width: 80%;
+            margin: auto;
+            padding: 7vh 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                color: white;
+                font-size: 2.55rem;
+                margin-bottom: 7vh;
+            }
+            a{
+                text-align: center;
+                width: 45%;
+                padding: 2vh 2vw;
+                display: block;
+                background-color: white;
+                color: $green;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 900;
+                letter-spacing: 0.65px;
+            }
         }
     }
 }
