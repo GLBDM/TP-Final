@@ -8,5 +8,6 @@ function myFunction() {
   }
 
   function displayReceived() {
-    document.getElementById("received").innerHTML = "Thanks! Email received";
+    document.getElementById("received1").innerHTML = "Thanks! Email received";
+    document.getElementById("received2").innerHTML = "Thanks! Email received";
   }

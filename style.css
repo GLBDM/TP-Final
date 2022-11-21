@@ -220,7 +220,7 @@ main .cards {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5vh;
+  padding: 5vh 0 10vh 0;
 }
 main .cards .card {
   width: 65%;
@@ -247,13 +247,15 @@ main .cards .card .content a .fa-chevron-right {
   font-size: 0.8rem;
   font-weight: 900;
 }
-main .member .content h3 {
+main .cards .content {
+  width: 75%;
+}
+main .cards .content h3 {
   font-size: 2.2rem;
   margin-bottom: 3.5vh;
 }
-main .member .content p {
+main .cards .content p {
   width: 90%;
-  margin-bottom: 10vh;
 }
 main .member .imgCards1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5074404762) 0%, rgba(0, 0, 0, 0.2525385154) 25%, rgba(0, 0, 0, 0.0508578431) 50%), url("assets/img/img6.png");
@@ -349,9 +351,12 @@ main .email a {
   font-weight: 900;
   letter-spacing: 0.65px;
 }
-main .email #received {
+main .email #received1 {
   color: #4BA87D;
   margin: 1.5vh 0;
+}
+main .email #received2 {
+  display: none;
 }
 main .brands {
   margin-bottom: 8vh;
@@ -418,4 +423,274 @@ main .plan .content a {
   text-decoration: none;
   font-weight: 900;
   letter-spacing: 0.65px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    width: 90%;
+    margin: auto;
+  }
+  header .container {
+    width: auto;
+  }
+  header .container .title {
+    width: 23%;
+  }
+  header .container .title h1 {
+    font-size: 2.375rem;
+  }
+  header .container .header {
+    width: 60%;
+  }
+  header .container .header .icon {
+    display: none;
+  }
+  header .container .header #myLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .container .header #myLinks a {
+    position: relative;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.825px;
+  }
+  header .container .header #myLinks a::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #4BA87D;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  header .container .header #myLinks a:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+  header .container .header #myLinks .signUp {
+    text-align: center;
+    padding: 1vh 1vw;
+    display: block;
+    border: 3px solid #4BA87D;
+    background-color: #4BA87D;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.65px;
+  }
+  main .emailCampaigns {
+    position: relative;
+    width: 85%;
+    padding-bottom: 60vh;
+  }
+  main .emailCampaigns .background {
+    z-index: 1;
+    height: 50vh;
+    width: 60%;
+    float: right;
+    box-shadow: 0px 3px 8px 3px rgba(153, 153, 153, 0.18);
+  }
+  main .emailCampaigns .left {
+    position: absolute;
+    width: 55%;
+    top: 35px;
+    left: 0;
+  }
+  main .emailCampaigns .left .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  main .emailCampaigns .left .buttons a {
+    font-size: 1.5rem;
+    padding: 2.5vh 0;
+  }
+  main .emailCampaigns .left h2 {
+    text-transform: capitalize;
+    font-size: 3.55rem;
+    width: 100%;
+  }
+  main .emailCampaigns .left p {
+    font-size: 1.3rem;
+    padding: 6vh 0;
+    width: 82%;
+  }
+  main .moreCustomers {
+    width: 80%;
+    height: 75vh;
+  }
+  main .moreCustomers h3 {
+    font-size: 3.65rem;
+    padding-bottom: 10vh;
+  }
+  main .moreCustomers a {
+    padding: 3vh 7vh;
+    font-size: 1.5rem;
+  }
+  main .cards {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 13vh 0;
+  }
+  main .cards .card {
+    width: 30%;
+    margin: 0;
+  }
+  main .cards .card img {
+    width: 100%;
+  }
+  main .cards .card .content {
+    width: 100%;
+  }
+  main .cards .card .content p {
+    font-size: 1.2rem;
+  }
+  main .cards .content {
+    width: 33%;
+  }
+  main .cards .content h3 {
+    font-size: 2.9rem;
+  }
+  main .cards .content p {
+    font-size: 1.5rem;
+  }
+  main .brands {
+    width: 100%;
+    margin: auto;
+  }
+  main .brands .img {
+    width: 100%;
+    flex-direction: row;
+  }
+  main .member {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  main .member .imgCards1 {
+    margin: 0;
+    width: 27%;
+  }
+  main .member .imgCards2 {
+    margin: 0;
+    width: 27%;
+  }
+  main .member .imgCards3 {
+    margin: 0;
+    width: 27%;
+  }
+  main .email {
+    margin-top: 7vh;
+  }
+  main .email h3 {
+    font-size: 2.9rem;
+    padding-bottom: 3vh;
+  }
+  main .email .form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    flex-wrap: wrap;
+  }
+  main .email .form input {
+    padding: 2vw;
+    width: 55%;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  main .email .form a {
+    width: 30%;
+    padding: 3.5vh 1vw;
+    display: block;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  main .email .form #received2 {
+    display: block;
+    color: #4BA87D;
+    margin: 1.5vh 0;
+    font-size: 1.3rem;
+  }
+  main .email .form #received1 {
+    display: none;
+  }
+  main .brands {
+    padding: 10vh 0;
+  }
+  main .brands h3 {
+    font-size: 2.9rem;
+    padding-bottom: 3vh;
+  }
+  main .brands .img {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  main .brands .img .row1 {
+    width: 30%;
+    margin: 0;
+  }
+  main .brands .img .row2 {
+    width: 40%;
+    margin: 0;
+  }
+  main .plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  }
+  main .plan .content h2 {
+    font-size: 4.55rem;
+  }
+  main .plan .content a {
+    width: 20%;
+    padding: 3vh 2vh;
+    font-size: 1.5rem;
+  }
+  footer .parent {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10vh 0 5vh 0;
+  }
+  footer .parent .title {
+    padding: 0;
+  }
+  footer .parent .content {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .parent .content .col ul {
+    display: flex;
+    align-items: start;
+    font-weight: 900;
+  }
+  footer .footer {
+    flex-direction: row;
+    width: 95%;
+  }
+  footer .footer .containerFooter {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */

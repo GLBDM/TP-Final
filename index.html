@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,7 +26,7 @@
                     <a href="#"><li>Pricing</li></a>
                     <a href="#"><li>Services</li></a>
                     <a href="#"><li>Partners</li></a>
-                    <a href="#"><li>Sign up free</li></a>
+                    <a href="#" class="signUp"><li>Sign up free</li></a>
                 </ul>
             </div>
         </div>
@@ -35,12 +35,15 @@
     <main>
 
         <section class="emailCampaigns">
-            <div class="background">
+            <div class="background"></div>
+            <div class="left">
                 <h2>Create stunnning <span>email</span> campaigns</h2>
                 <p>Create and launch email campaigns that captivate your customers in just a few clicks.</p>
-            </div>
-            <a href="">Try now</a>
-            <a href="">Get a demo</a>
+                <div class="buttons">
+                    <a href="">Try now</a>
+                    <a href="">Get a demo</a>
+                </div>
+            </div>            
         </section>
 
         <section class="moreCustomers">
@@ -63,14 +66,13 @@
                     <a href="#">Learn More ></i></a>
                 </div>
             </div>
-        </section>
-
-        <section class="member width">
             <div class="content">
                 <h3>The source for proven, engaging email campaigns</h3>
                 <p>Whether you’re a startup, small business, e-commerce store, or want to promote your app, NinjaMail has the feature set tailored for your business.</p>
             </div>
-            
+        </section>
+
+        <section class="member width">      
             <div class="imgCards1">
                 <div>
                     <h4>Frankie</h4>
@@ -93,9 +95,13 @@
 
         <section class="email width">
             <h3>Learn how others are reaching their audience easier than ever before.</h3>
-            <input type="email" placeholder="Enter your email">
-            <p id="received"></p>
-            <a onclick="displayReceived()">Join our list</a>
+            <div class="form">
+                <input type="email" placeholder="Enter your email">
+                <p id="received1"></p>
+                <a onclick="displayReceived()">Join our list</a>
+                <p id="received2"></p>
+            </div>
+            
         </section>
 
         <section class="brands">
@@ -123,44 +129,46 @@
     </main>
     <footer>
         <div class="containerFooter">
-            <div class="title">
-                <img src="assets/img/img1.png" alt="NinjaMail Logo">
-                <h1>NinjaMail</h1>
-            </div>
-            <div class="content">
-                <div class="col">
-                    <ul>
-                        <li>Features</li>
-                        <li>Pricing</li>
-                        <li>Services</li>
-                        <li>Partners</li>
-                    </ul>
+            <div class="parent">
+                <div class="title">
+                    <img src="assets/img/img1.png" alt="NinjaMail Logo">
+                    <h1>NinjaMail</h1>
                 </div>
-                <div class="col">
-                    <ul>
-                        <li>About Us</li>
-                        <li>Tutorials</li>
-                        <li>Resources</li>
-                        <li>Help Center</li>
-                        <li>Templates</li>
-                        <li>Case Studies</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li>Medium</li>
-                        <li>Twitter</li>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>LinkedIn</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li>Contact Us</li>
-                        <li>Slack</li>
-                        <li>Jobs</li>
-                    </ul>
+                <div class="content">
+                    <div class="col">
+                        <ul>
+                            <li>Features</li>
+                            <li>Pricing</li>
+                            <li>Services</li>
+                            <li>Partners</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>About Us</li>
+                            <li>Tutorials</li>
+                            <li>Resources</li>
+                            <li>Help Center</li>
+                            <li>Templates</li>
+                            <li>Case Studies</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Medium</li>
+                            <li>Twitter</li>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>LinkedIn</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>Slack</li>
+                            <li>Jobs</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer">
@@ -171,7 +179,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
     <script src="script.js"></script>
 </body>

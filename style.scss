@@ -98,7 +98,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 5vh;
+        padding: 5vh 0 10vh 0;
 
         .card{
             width: 65%;
@@ -126,10 +126,8 @@ main{
                 }
             }
         }
-    }
-
-    .member{
         .content{
+            width: 75%;
             h3{
                 font-size: 2.2rem;
                 margin-bottom: 3.5vh;
@@ -137,9 +135,11 @@ main{
 
             p{
                 width: 90%;
-                margin-bottom: 10vh;
             }
         }
+    }
+
+    .member{
         .imgCards1{
             background-image: linear-gradient(0deg, rgba(0,0,0,0.5074404761904762) 0%, rgba(0,0,0,0.25253851540616246) 25%, rgba(0,0,0,0.05085784313725494) 50%),
                               url('assets/img/img6.png');
@@ -244,9 +244,12 @@ main{
             font-weight: 900;
             letter-spacing: 0.65px;
         }
-        #received{
+        #received1{
             color: $green;
             margin: 1.5vh 0;
+        }
+        #received2{
+            display: none;
         }
     }
 
@@ -316,3 +319,5 @@ main{
         }
     }
 }
+
+@import 'mediaqueries';
