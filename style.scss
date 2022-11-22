@@ -1,3 +1,5 @@
+///////// POUR LE SASS
+
 @import 'reset', 'header', 'color', 'footer';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;700;800;900&display=swap');
 
@@ -101,6 +103,8 @@ main{
         }
     }
 
+
+    ///////// CARDS
     .cards{
         display: flex;
         flex-direction: column;
@@ -147,6 +151,10 @@ main{
         }
     }
 
+
+
+
+    ///////// MEMBER
     .member{
         .imgCards1{
             background-image: linear-gradient(0deg, rgba(0,0,0,0.5074404761904762) 0%, rgba(0,0,0,0.25253851540616246) 25%, rgba(0,0,0,0.05085784313725494) 50%),
@@ -218,6 +226,8 @@ main{
         }
     }
 
+
+    ///////// EMAIL
     .email{
         display: flex;
         flex-direction: column;
@@ -261,6 +271,8 @@ main{
         }
     }
 
+
+    ///////// BRANDS
     .brands{
         margin-bottom: 8vh;
         h3{
@@ -296,6 +308,8 @@ main{
         }
     }
 
+
+    ///////// PLAN
     .plan{
         background-color: $green;
         .content{
@@ -328,4 +342,7 @@ main{
     }
 }
 
+
+
+///////// LES MEDIAQUERIES
 @import 'mediaqueries';
