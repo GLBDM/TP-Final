@@ -294,4 +294,98 @@
 
 @media only screen and (min-width: 1440px) {
 
+    header{
+        width: 80%;
+        .container{
+            .title{
+                width: 17%;
+                img{
+                    width: 30%;
+                }
+            }
+            .header{
+                width: 55%;
+            }
+        }
+    }
+
+    main{
+        .emailCampaigns{
+            width: 70%;
+            .left{
+                width: 45%;
+            }
+        }
+        .moreCustomers{
+            width: 60%;
+            height: 69vh;
+        }
+
+        .cards{
+            width: 70%;
+            .card{
+                width: 27%;
+            }
+        }
+
+        .member{
+            width: 70%;
+        }
+
+        .email{
+            width: 70%;
+            h3{
+                width: 70%;
+            }
+            .form{
+                width: 53%;
+                input{
+                    padding: 1vw;
+                    width: 57%;
+                }
+                a{
+                    width: 27%;
+                    padding: 2vh 1vw;
+                }
+                #received2{
+                    padding-left: 2.4vh;
+                }
+            }
+        }
+        .brands{
+            h3{
+                width: 25%;
+                margin: auto;
+            }
+            .img{
+                width: 65%;
+                .row2{
+                    width: 38%;
+                }
+            }
+        }
+
+    }
+
+    footer{
+        width: 75%;
+        margin: auto;
+        .parent{
+            .title{
+                width: 20%;
+                h1{
+                    font-size: 2rem;
+                }
+            }
+            .content{
+                width: 55%;
+            }
+        }
+        .footer{
+            flex-direction: row;
+        }
+
+    }
+
+
 }

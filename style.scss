@@ -31,9 +31,14 @@ main{
             background-size: cover;
             background-position: center;
             height: 24vh;
+        }
+        .left{
+            position: relative;
+            bottom: 220px;
+            left: 0;
+            width: 100%;
+            margin-bottom: -30vh;
             h2{
-                position: relative;
-                bottom: 22px;
                 text-transform: capitalize;
                 font-size: 2.55rem;
                 width: 92%;
@@ -42,26 +47,29 @@ main{
                 }
             }
             p{
+                padding: 4vh 0;
                 font-size: 1.08rem;
             }
-        }
-        a{
-            text-align: center;
-            width: 45%;
-            padding: 1.5vh 0;
-            display: block;
-            border: 3px solid $green;
-            background-color: white;
-            color: $green;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 900;
-            letter-spacing: 0.65px;
-        }
-        a:nth-child(2){
-            background-color: $green;
-            color: white;
-        }
+            .buttons{
+                a{
+                    text-align: center;
+                    width: 45%;
+                    padding: 1.5vh 0;
+                    display: block;
+                    border: 3px solid $green;
+                    background-color: $green;
+                    color: white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 900;
+                    letter-spacing: 0.65px;
+                }
+                a:nth-child(2){
+                    background-color: white;
+                    color: $green;
+                }
+            }
+        }   
     }
 
     ///////// MORE CUSTOMERS

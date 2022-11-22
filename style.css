@@ -84,6 +84,9 @@ table {
 }
 .container .header #myLinks {
   display: none;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .containerFooter {
@@ -159,35 +162,41 @@ main .emailCampaigns .background {
   background-position: center;
   height: 24vh;
 }
-main .emailCampaigns .background h2 {
+main .emailCampaigns .left {
   position: relative;
-  bottom: 22px;
+  bottom: 220px;
+  left: 0;
+  width: 100%;
+  margin-bottom: -30vh;
+}
+main .emailCampaigns .left h2 {
   text-transform: capitalize;
   font-size: 2.55rem;
   width: 92%;
 }
-main .emailCampaigns .background h2 span {
+main .emailCampaigns .left h2 span {
   padding-right: 1vw;
 }
-main .emailCampaigns .background p {
+main .emailCampaigns .left p {
+  padding: 4vh 0;
   font-size: 1.08rem;
 }
-main .emailCampaigns a {
+main .emailCampaigns .left .buttons a {
   text-align: center;
   width: 45%;
   padding: 1.5vh 0;
   display: block;
   border: 3px solid #4BA87D;
-  background-color: white;
-  color: #4BA87D;
+  background-color: #4BA87D;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 900;
   letter-spacing: 0.65px;
 }
-main .emailCampaigns a:nth-child(2) {
-  background-color: #4BA87D;
-  color: white;
+main .emailCampaigns .left .buttons a:nth-child(2) {
+  background-color: white;
+  color: #4BA87D;
 }
 main .moreCustomers {
   width: 95%;
@@ -691,6 +700,85 @@ main .plan .content a {
     width: 95%;
   }
   footer .footer .containerFooter {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header {
+    width: 80%;
+  }
+  header .container .title {
+    width: 17%;
+  }
+  header .container .title img {
+    width: 30%;
+  }
+  header .container .header {
+    width: 55%;
+  }
+  main .emailCampaigns {
+    width: 70%;
+  }
+  main .emailCampaigns .left {
+    width: 45%;
+  }
+  main .moreCustomers {
+    width: 60%;
+    height: 69vh;
+  }
+  main .cards {
+    width: 70%;
+  }
+  main .cards .card {
+    width: 27%;
+  }
+  main .member {
+    width: 70%;
+  }
+  main .email {
+    width: 70%;
+  }
+  main .email h3 {
+    width: 70%;
+  }
+  main .email .form {
+    width: 53%;
+  }
+  main .email .form input {
+    padding: 1vw;
+    width: 57%;
+  }
+  main .email .form a {
+    width: 27%;
+    padding: 2vh 1vw;
+  }
+  main .email .form #received2 {
+    padding-left: 2.4vh;
+  }
+  main .brands h3 {
+    width: 25%;
+    margin: auto;
+  }
+  main .brands .img {
+    width: 65%;
+  }
+  main .brands .img .row2 {
+    width: 38%;
+  }
+  footer {
+    width: 75%;
+    margin: auto;
+  }
+  footer .parent .title {
+    width: 20%;
+  }
+  footer .parent .title h1 {
+    font-size: 2rem;
+  }
+  footer .parent .content {
+    width: 55%;
+  }
+  footer .footer {
     flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
